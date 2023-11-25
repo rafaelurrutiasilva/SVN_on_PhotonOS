@@ -6,11 +6,23 @@ Här beskriver jag hur du kan få SVN att fungera på [Photon OS](https://vmware
 
 ## Bakgrund
 Efter mycket letande, test av olika bibliotek samt försökt till kompilering av SVN på Photon OS så blev lösningen att köra det som en Container applikation.
+Det ar enkelt att få SVN att fungera som en container applikation. Imagen som används här är framtagen av [Luca Florio](https://hub.docker.com/u/elleflorio) och han beskriver sitt arbete i projetet [här](https://hub.docker.com/r/elleflorio/svn-server/) på DocketHub.
+
+
+## Reservation
+Innan du tar detta till produktion skall du tänka på följande:
+* Skanna och uppgradera imagen `elleflorio/svn-server`, den är över 3 år gammal. Bygg din egen image ur den och uppdagera OS.
+* Använd TLS/SSL på din installation.
+* Övervaka tjänsten och den dockerhost du tänker använda.
+  
 
 ## Miljö
 * VMware Photon OS v4.0
 * Docker version 24.0.5, build ced0996
+* Image OS Alpine Linux v3.5
+* DockerHub elleflorio/svn-server 
 
+  
 ## Uppdatering och baskonfiguration av Photon OS
 Uppdate OSet, starta och enabla docker
 ```
