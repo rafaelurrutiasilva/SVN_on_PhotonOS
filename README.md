@@ -1,6 +1,6 @@
 # SVN i PhotonOS
 <img width="220" alt="SVN_on_PhotonOS" src="https://github.com/rafaelurrutiasilva/images/blob/main/SVN_on_PhotonOS.png" align=left> <br> 
-Beskriver hur du kan få SVN att fungera på PhotonOS. <br>
+Här beskriver jag hur du kan få SVN att fungera på Photon OS. <br>
 <br>
 <br>
 
