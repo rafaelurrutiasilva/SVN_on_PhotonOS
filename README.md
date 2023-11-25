@@ -13,7 +13,7 @@ Det ar enkelt att få SVN att fungera som en container applikation. Imagen som a
 Innan du tar detta till produktion skall du tänka på följande:
 * Skanna och uppgradera imagen `elleflorio/svn-server`, den är över 3 år gammal. Bygg din egen image ur den och uppdagera OS.
 * Använd TLS/SSL på din installation.
-* Övervaka tjänsten och den dockerhost du tänker använda.
+* Övervaka tjänsten och den dockerhost du tänker använda. Samma gäller så klart om du i stället vill använda dig av en Kubernetes plattform.
   
 
 ## Miljö
