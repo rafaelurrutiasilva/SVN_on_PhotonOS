@@ -47,7 +47,9 @@ docker run --detach --name  svn-server -p 80:80 -p 3690:3690 --volume svn_root:/
 ## Testa
 ### Surfa in
 Testa via en browser byt IP till det du har
+```
 http://192.168.157.143/svn/
+```
 
 ### Testa med ny repo
 Skapa en repon RepoTest 
@@ -60,8 +62,9 @@ docker exec -it svn-server svnadmin create RepoTest
 docker exec -it svn-server ls -al RepoTest
 ```
 ### Testa via en browser igen (byt IP till det du har)
+```
 http://192.168.157.143/svn/
-
+```
 Nu kan du börja ladda det du vill ha. Går in i container med exec -it enligt:
 ```
 docker exec -it svn-server sh 
